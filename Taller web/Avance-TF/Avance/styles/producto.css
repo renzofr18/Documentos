@@ -1,0 +1,46 @@
+.titulo {
+    color: #4C5969;
+    font-family: "Abel", sans-serif;
+    text-align: center;
+}
+
+
+
+.menu {
+    text-align-last: center;
+    font-family: verdana;
+    background-color: #96c4c4
+}
+
+li {
+    display: block;
+    margin-left: 0%;
+    margin-right: 40px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.Contenido {
+    text-align-last: center;
+    font-family: verdana;
+    height: 100%;
+    font-size: 18px;
+}
+
+.footer {
+    text-align-last: center;
+    font-family: verdana;
+    background-color:#ccd48e ;
+    color: white;
+    margin-top: auto;
+    padding: 20px;
+}
+
+#contenido {
+    border: 3px solid #C38FFF;
+    margin-left: 550px;
+    margin-right: 550px;
+}

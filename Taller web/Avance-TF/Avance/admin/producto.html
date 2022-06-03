@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador-Productos</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/producto.css">
+   <link rel="stylesheet" href="../styles/iconos.css"> 
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Audiowide|Abel">
+   <script src="https://kit.fontawesome.com/96d888f474.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="navbar__contenido">
+            <div>
+                <img src="../img/logo.jpg" alt="Logo-encabezado" class="navbar__logo">
+            </div>
+            <div>
+                <h1 class="letra">
+                    ARCHIVDREAMS
+                </h1>
+            </div>
+            <!--Navbar general-->
+            <div class="navbar__enlaces">
+                <div>
+                    <a href="./index.html" class="letra"> <i class="fa-solid fa-house"></i> Inicio</a>
+                </div>
+                <div>
+                    <a href="../productos.html" class="letra"><i class="fa-solid fa-shirt"></i> Productos</a>
+                </div>
+                <div>
+                    <a href="../admin" class="letra"><i class="fa-solid fa-screwdriver-wrench"></i> Admin</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contenido -->
+    <div style="background-color: #dbe39163;" >
+        <div class="marca">
+            <h1>Polo H&M</h1>
+        </div>
+        <br/>
+        <div class="Contenido" style="text-align: center;"> 
+            <img src="../img/poloBlanco.jpg" alt="" width="250">
+            <form action="/admin/editar-producto" method="post">
+                <br/>
+                <div  >
+                    <label for="inputNombre">  Nombre:</label>
+                    <input type="text" name="inputNombre" value="Polo H&M" />
+                </div>
+                <div >
+                    <label for="inputCantidad">Stock</label> <input type="number" name="inputCantidad" id="" value="10" />
+                </div>
+                <div >
+                    <label for="inputCantidad">Precio</label> <input type="text" name="inputPrecio" id="" value="54" />
+                </div>
+                <div>
+                    <label for="selectTipo">Tipo</label>
+                    <select name="selectTipo" id="">
+                    <option value="prenda" selected="selected">Prenda</option>
+                    <option value="accesorio">Accesorio</option>
+                    </select>
+                </div>
+                <br/>
+                <div>
+                    <input type="file" name="imagen" id="imagen">
+                </div>
+                <br/>
+                <button>Guardar cambios</button>
+            </form>
+        </div>
+        <br/>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="redes-container">
+            
+            <ul>
+                
+                <li><a href="https://www.instagram.com/archivdream/" target="_blank" class="instagram"><img src="../img/instagram.png" alt="Instragram"  /></a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@archivdream" target="_blank" class="tiktok"><img src="../img/tiktok.png" alt="Tiktok" /> </a>
+                </li>
+            </ul>
+        </div><br>
+        <div>
+            <p>
+                <b>Copyright&copy; 2022</b> - GRUPO 9 - Todos los derechos reservados
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

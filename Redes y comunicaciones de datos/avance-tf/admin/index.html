@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=
+    , initial-scale=1.0" />
+    <title>Administrador</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <!-- <link rel="stylesheet" href="../styles/admin.css"> -->
+    <link rel="stylesheet" href="../styles/botones.css">
+    <link rel="stylesheet" href="../styles/productos.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="navbar__contenido">
+            <div>
+                <img src="../img/logo.jpg" alt="Logo-encabezado" class="navbar__logo">
+            </div>
+            <div>
+                <h1>
+                    Archivdreams
+                </h1>
+            </div>
+            <!--Navbar general-->
+            <div class="navbar__enlaces">
+                <div>
+                    <a href="/index.html">Inicio</a>
+                </div>
+                <div>
+                    <a href="/productos.html">Productos</a>
+                </div>
+                <div>
+                    <a href="#">Admin</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido -->
+    <div class="contenedor">
+        <div class="producto__cabecera">
+            <h1>Administrador</h1>
+        </div>
+        <!--Creacion Producto-->
+        <div class="producto__creacion">
+            <h2>Crea un producto</h2>
+            <form class="producto__formulario--creacion" action="/admin/producto" method="post">
+                <div class="producto__formulario__label">
+                    <label for="inputNombre">Nombre:</label>
+                    <input type="text" name="inputNombre" />
+                </div>
+                <div class="producto__formulario__label">
+                    <label for="inputCantidad">Stock</label> <input type="number" name="inputCantidad" id="" />
+                </div>
+                <div class="producto__formulario__label">
+                    <label for="selectTipo">Tipo</label>
+                    <select name="selectTipo" id="">
+                        <option value="prenda">Prenda</option>
+                        <option value="accesorio">Accesorio</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="file" name="imagen" id="">
+                </div>
+                <button class="boton boton--celeste">Crear</button>
+            </form>
+        </div>
+        <!--Productos-->
+        <div class="productos__seccion producto__grid producto--administrador">
+            <div class="producto__item">
+                <h3 class="producto__title">Polo H&M</h3>
+                <img class="producto__img" src="/img/poloBlanco.jpg" alt="poloh&m" width="250" />
+                <p class="producto__texto">S/54.00</p>
+                <div class="producto__botones">
+                    <form action="/eliminar-producto" method="post" class="display--inline">
+                        <button class="boton boton--celeste">Eliminar producto</button>
+                    </form>
+                    <a href="/admin/producto.html" class="boton boton--celeste">Editar</a>
+                </div>
+            </div>
+            <div class="producto__item">
+                <h3 class="producto__title">Polo H&M Clásico</h3>
+                <img class="producto__img" src="/img/poloBlanco.jpg" alt="poloh&m" width="250" />
+                <p class="producto__texto">S/50.00</p>
+                <div class="producto__botones">
+                    <form action="/eliminar-producto" method="post" class="display--inline">
+                        <button class="boton boton--celeste">Eliminar producto</button>
+                    </form>
+                    <a href="/admin/producto.html" class="boton boton--celeste">Editar</a>
+                </div>
+            </div>
+            <div class="producto__item">
+                <h3 class="producto__title">Polo H&M</h3>
+                <img class="producto__img" src="/img/poloBlanco.jpg" alt="poloh&m" width="250" />
+                <p class="producto__texto">S/54.00</p>
+                <div class="producto__botones">
+                    <form action="/eliminar-producto" method="post" class="display--inline">
+                        <button class="boton boton--celeste">Eliminar producto</button>
+                    </form>
+                    <a href="/admin/producto.html" class="boton boton--celeste">Editar</a>
+                </div>
+            </div>
+            <div class="producto__item">
+                <h3 class="producto__title">Polo H&M Clásico</h3>
+                <img class="producto__img" src="/img/poloBlanco.jpg" alt="poloh&m" width="250" />
+                <p class="producto__texto">S/50.00</p>
+                <div class="producto__botones">
+                    <form action="/eliminar-producto" method="post" class="display--inline">
+                        <button class="boton boton--celeste">Eliminar producto</button>
+                    </form>
+                    <a href="/admin/producto.html" class="boton boton--celeste">Editar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div>
+        <div>
+            <p>
+                <b>Copyright&copy; 2022</b> - Página creada por el <b>grupo 9</b> - Todos los derechos reservados
+            </p>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.instagram.com/archivdream/" target="_blank">Instagram</a></li>
+                <li>
+                    <a href="https://www.tiktok.com/@archivdream" target="_blank">Tiktok</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

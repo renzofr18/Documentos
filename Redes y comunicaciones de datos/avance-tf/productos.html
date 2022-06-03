@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div>
+        <div>
+            <img src="/img/logo.jpg" alt="Logo-encabezado">
+            <h1>
+                Archivdreams
+            </h1>
+        </div>
+        <!--Navbar general-->
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="/carrito-compras.html">Carrito</a></li>
+        </ul>
+        <!--Navbar Admin-->
+        <ul>
+            <li>
+                <a href="/admin/index.html">Admin</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Contenido -->
+    <div>
+        <div>
+            <h1>Productos</h1>
+        </div>
+        <div>
+            <div>
+                <form action="/productos" method="get">
+                    <label for="optionTipoProducto">Filtrar por tipo de producto</label>
+                    <select id="optionTipoProducto">
+              <option value="polo">Polos</option>
+              <option value="polera">Poleras</option>
+              <option value="camisa">Camisas</option>
+              <option value="falda">Faldas</option>
+              <option value="cartera">Carteras</option>
+              <option value="collar">Collares</option>
+            </select>
+                </form>
+            </div>
+            <div>
+                <h2>Polos</h2>
+            </div>
+            <div>
+                <div>
+                    <h3>Polo H&M</h3>
+                    <img src="./img/poloBlanco.jpg" alt="poloh&m" width="250" />
+                    <p>S/54.00</p>
+                    <form action="/producto" method="POST">
+                        <button>Agregar al carrito</button>
+                    </form>
+                    <a href="./producto.html">Ver producto</a>
+                </div>
+                <div>
+                    <h3>Polo H&M Clásico</h3>
+                    <img src="./img/poloBlanco.jpg" alt="poloh&m" width="250" />
+                    <p>S/50.00</p>
+                    <form action="/producto" method="post">
+                        <input type="number" name="cantidadProducto" id="cantidadProducto" min="1" value="1" />
+                        <button>Agregar al carrito</button>
+                    </form>
+                    <a href="./producto.html">Ver producto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div>
+        <div>
+            <p>
+                <b>Copyright&copy; 2022</b> - Página creada por el <b>grupo 9</b> - Todos los derechos reservados
+            </p>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.instagram.com/archivdream/" target="_blank">Instagram</a></li>
+                <li>
+                    <a href="https://www.tiktok.com/@archivdream" target="_blank">Tiktok</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

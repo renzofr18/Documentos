@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>Administrador</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <!-- <link rel="stylesheet" href="../styles/admin.css"> -->
+    <link rel="stylesheet" href="../styles/botones.css">
+    <link rel="stylesheet" href="../styles/productos.css">
+    <link rel="stylesheet" href="../styles/iconos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Audiowide|Abel">
+   <script src="https://kit.fontawesome.com/96d888f474.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="navbar__contenido">
+            <div>
+                <img src="../img/logo.jpg" alt="Logo-encabezado" class="navbar__logo">
+            </div>
+            <div>
+                <h1 class="letra">
+                    ARCHIVDREAMS
+                </h1>
+            </div>
+            <!--Navbar general-->
+            <div class="navbar__enlaces">
+                <div>
+                    <a href="../index.html" class="letra"><i class="fa-solid fa-house"></i> Inicio</a>
+                </div>
+                <div>
+                    <a href="../productos.html" class="letra"> <i class="fa-solid fa-shirt"></i> Productos</a>
+                </div>
+                <div>
+                    <a href="#" class="letra"> <i class="fa-solid fa-screwdriver-wrench"></i> Admin</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido -->
+    <div class="contenidos" style="background-color: #dbe39163;">
+        <div class="producto__cabecera">
+            <h1>Administrador</h1>
+        </div>
+        <!--Creacion Producto-->
+        <div class="producto__creacion">
+            <h2>Crea un producto</h2>
+            <br/>
+            <form class="producto__formulario--creacion" action="/admin/producto" method="post">
+                <div class="producto__formulario__label">
+                    <label for="inputNombre">Nombre:</label>
+                    <input type="text" name="inputNombre" />
+                </div>
+                <div class="producto__formulario__label">
+                    <label for="inputCantidad">Stock</label> <input type="number" name="inputCantidad" id="" />
+                </div>
+                <div class="producto__formulario__label">
+                    <label for="inputCantidad">Precio</label> <input type="text" name="inputPrecio" id="" value="54" />
+                </div>
+                <div class="producto__formulario__label">
+                    <label for="selectTipo">Tipo</label>
+                    <select name="selectTipo" id="">
+                        <option value="prenda">Prenda</option>
+                        <option value="accesorio">Accesorio</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="file" name="imagen" id="">
+                </div>
+                <br/>
+                <button class="boton boton--celeste">Crear</button>
+            </form>
+            <br/>
+        </div>
+        <!--Productos-->
+        <div class="productos__seccion producto__grid producto--administrador">
+            <div class="producto__item">
+                <h3 class="producto__title">Polo H&M</h3>
+                <img class="producto__img" src="../img/poloBlanco.jpg" alt="poloh&m" width="250" />
+                <p class="producto__texto">S/54.00</p>
+                <div class="producto__botones">
+                    <form action="/eliminar-producto" method="post" class="display--inline">
+                        <button class="boton boton--celeste">Eliminar producto</button>
+                    </form>
+                    <a href="../admin/producto.html" class="boton boton--celeste">Editar</a>
+                </div>
+            </div>
+            <div class="producto__item">
+                <h3 class="producto__title">Polo H&M Clásico</h3>
+                <img class="producto__img" src="../img/poloBlanco.jpg" alt="poloh&m" width="250" />
+                <p class="producto__texto">S/50.00</p>
+                <div class="producto__botones">
+                    <form action="/eliminar-producto" method="post" class="display--inline">
+                        <button class="boton boton--celeste">Eliminar producto</button>
+                    </form>
+                    <a href="../admin/producto.html" class="boton boton--celeste">Editar</a>
+                </div>
+            </div>
+            <div class="producto__item">
+                <h3 class="producto__title">Polo H&M</h3>
+                <img class="producto__img" src="../img/poloBlanco.jpg" alt="poloh&m" width="250" />
+                <p class="producto__texto">S/54.00</p>
+                <div class="producto__botones">
+                    <form action="/eliminar-producto" method="post" class="display--inline">
+                        <button class="boton boton--celeste">Eliminar producto</button>
+                    </form>
+                    <a href="../admin/producto.html" class="boton boton--celeste">Editar</a>
+                </div>
+            </div>
+            <div class="producto__item">
+                <h3 class="producto__title">Polo H&M Clásico</h3>
+                <img class="producto__img" src="../img/poloBlanco.jpg" alt="poloh&m" width="250" />
+                <p class="producto__texto">S/50.00</p>
+                <div class="producto__botones">
+                    <form action="/eliminar-producto" method="post" class="display--inline">
+                        <button class="boton boton--celeste">Eliminar producto</button>
+                    </form>
+                    <a href="../admin/producto.html" class="boton boton--celeste">Editar</a>
+                </div>
+            </div>
+        </div>
+        <br/>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="redes-container">
+            
+            <ul>
+                
+                <li><a href="https://www.instagram.com/archivdream/" target="_blank" class="instagram"><img src="../img/instagram.png" alt="Instragram"  /></a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@archivdream" target="_blank" class="tiktok"><img src="../img/tiktok.png" alt="Tiktok" /> </a>
+                </li>
+            </ul>
+        </div><br>
+        <div>
+            <p>
+                <b>Copyright&copy; 2022</b> - GRUPO 9 - Todos los derechos reservados
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

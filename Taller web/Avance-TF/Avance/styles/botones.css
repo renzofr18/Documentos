@@ -1,0 +1,12 @@
+.botones {}
+
+.boton {
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.boton--celeste {
+    background-color: #96c4c4;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div>
+        <div>
+            <img src="/img/logo.jpg" alt="Logo-encabezado">
+            <h1>
+                Archivdreams
+            </h1>
+        </div>
+        <!--Navbar general-->
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/productos.html">Productos</a></li>
+            <li><a href="/carrito-compras.html">Carrito</a></li>
+        </ul>
+        <!--Navbar Admin-->
+        <ul>
+            <li>
+                <a href="/admin/index.html">Admin</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Contenido -->
+    <div>
+        <div>
+            <h1>Polo H&M</h1>
+        </div>
+        <div>
+            <img src="/img/poloBlanco.jpg" alt="" width="200">
+            <form action="/admin/editar-producto" method="post">
+                <div>
+                    <label for="inputNombre">Nombre:</label>
+                    <input type="text" name="inputNombre" value="Polo H&M" />
+                </div>
+                <div>
+                    <label for="inputCantidad">Stock</label> <input type="number" name="inputCantidad" id="" value="54" />
+                </div>
+                <div>
+                    <label for="selectTipo">Tipo</label>
+                    <select name="selectTipo" id="">
+                    <option value="prenda" selected="selected">Prenda</option>
+                    <option value="accesorio">Accesorio</option>
+                    </select>
+                </div>
+                <div class="">
+                    <input type="file" name="imagen" id="imagen">
+                </div>
+                <button>Guardar cambios</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div>
+        <div>
+            <p>
+                <b>Copyright&copy; 2022</b> - Página creada por el <b>grupo 9</b> - Todos los derechos reservados
+            </p>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.instagram.com/archivdream/" target="_blank">Instagram</a></li>
+                <li>
+                    <a href="https://www.tiktok.com/@archivdream" target="_blank">Tiktok</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

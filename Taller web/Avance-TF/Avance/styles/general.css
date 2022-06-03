@@ -1,0 +1,32 @@
+
+.titulos {
+    color: #216869;
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+}
+
+.contenidos {
+    text-align: center;
+    font-size: 18px;
+}
+
+.prendas {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 150px;
+    /* min-width: ; */
+}
+
+.prendas>div {
+    max-width: 300px;
+}
+
+.footer {
+    background-color: #dbe391;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: white;
+}

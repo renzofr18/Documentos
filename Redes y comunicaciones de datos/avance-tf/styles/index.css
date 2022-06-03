@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.display--inline {
+    display: inline;
+}
+
+.contenedor {}
+
+.navbar {
+    background-color: black;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar a:hover {
+    color: red;
+    transform: scale(3);
+}
+
+.navbar__contenido {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar__logo {
+    height: 75px;
+    width: 75px;
+}
+
+.navbar__enlaces {
+    display: flex;
+    gap: 10px;
+}

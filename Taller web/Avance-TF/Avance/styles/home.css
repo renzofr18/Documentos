@@ -1,0 +1,51 @@
+table {
+    min-width: 100%;
+}
+
+.navbar__encabezado--h1 {
+    color: #4C5969;
+    font-family: verdana;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+li {
+    display: block;
+    margin-left: 0%;
+}
+
+.contenido {
+    padding: 25px;
+    padding-bottom: 0px;
+    text-align-last: center;
+    font-family: "Abel", sans-serif;
+}
+
+.contenido__metodos--table {
+    text-align-last: center;
+}
+
+.contenido__nosotros,
+.contenido__envios,
+.contenido__metodos {
+    padding: 80px;
+    padding-right: 250px;
+    padding-left: 250px;
+    font-size: 18px;
+}
+
+.contenido h2 {
+    color: #216869;
+    font-family: "Audiowide", sans-serif;
+}
+
+.footer {
+    text-align-last: center;
+    font-family: verdana;
+    background-color: #dbe391;
+    color: white;
+}
